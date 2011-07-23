@@ -1,0 +1,7 @@
+Xft.dpi:120
+URxvt.termName: rxvt-256color
+URxvt.font:xft:DejaVu Sans Mono:size=11,xft:WenQuanYi Micro Hei Mono:size=11
+URxvt.depth:32
+URxvt.background:rgba:0000/0000/0000/dddd
+URxvt.foreground:gray90
+URxvt.preeditType:Root

@@ -9,7 +9,9 @@ myawesomemenu = {
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "Debian", debian.menu.Debian_menu.Debian },
-                                    { "open terminal", terminal }
+                                    { "open terminal", terminal },
+                                    { "Suspend", cmd_suspend },
+                                    { "Shutdown", cmd_shutdown }
                                   }
                         })
 

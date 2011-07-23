@@ -6,9 +6,11 @@ presets.autorun({
     "gnome-volume-manager",
     "gnome-volume-control-applet",
     "/home/rack/bin-x86_64/wmname LG3D",
-    "xcompmgr",
+    "xcompmgr -cF",
     "synapse -s",
     "dropbox start -i",
     "/usr/share/ailurus/support/show-a-linux-skill-bubble",
-    "nautilus -n"
+    "parcellite",
+    "xrdb "..config_dir.."/Xresources",
+   -- "nautilus -n"
 })
