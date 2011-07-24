@@ -63,7 +63,18 @@ globalkeys = awful.util.table.join(
                   mypromptbox[mouse.screen].widget,
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
-              end)
+              end),
+              
+     -- shutter racklin
+    awful.key({ }, "Print", 
+            function()
+                awful.util.spawn("/usr/bin/shutter --disable_systray --full")
+            end),
+    awful.key({ "Control" }, "Print", 
+            function()
+                awful.util.spawn("/usr/bin/shutter --disable_systray --window")
+            end)
+              
 )
 
 clientkeys = awful.util.table.join(
