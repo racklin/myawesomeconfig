@@ -6,7 +6,7 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
-
+require("shifty")
 require("vicious")
 
 -- Load Debian menu entries
@@ -23,7 +23,7 @@ require("tags")
 require("menu")
 require("top-bar")
 require("bindings")
-require("rules")
+--require("rules")
 
 require("presets")
 require("autostart")
