@@ -20,7 +20,10 @@ globalkeys = awful.util.table.join(
             shifty.tagtoscr(awful.util.cycle(screen.count(), mouse.screen +1))
         end),-- move client to next tag
     awful.key({ modkey          }, "a",     shifty.add),  -- creat a new tag
-    awful.key({ modkey,         }, "r",  shifty.rename),  -- rename a tag
+    awful.key({ modkey,         }, "r",  function()
+            naughty.notify({ text = "RRRRname" })
+            shifty.rename({prefix="gy"})
+        end),  -- rename a tag
     awful.key({ modkey, "Shift" }, "a", function() 
             shifty.add({ nopopup = true }) 
         end), -- nopopup new tag
@@ -69,7 +72,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+    awful.key({ modkey },            "F2",     function () mypromptbox[mouse.screen]:run() end),
 
     awful.key({ modkey }, "x",
               function ()

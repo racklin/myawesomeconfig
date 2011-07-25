@@ -20,6 +20,7 @@ require("global")
 beautiful.init(config_dir.."/themes/zenburn/theme.lua")
 
 require("tags")
+require("rules")
 require("menu")
 require("top-bar")
 require("bindings")

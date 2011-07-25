@@ -23,11 +23,12 @@ autorun({
     "gnome-volume-manager",
     "gnome-volume-control-applet",
     "/home/rack/bin-x86_64/wmname LG3D",
-    "xcompmgr -cF",
+    "xcompmgr",
     "synapse -s",
     "dropbox start -i",
     "/usr/share/ailurus/support/show-a-linux-skill-bubble",
     "parcellite",
+    "xscreensaver -no-splash",
     "xrdb "..config_dir.."/Xresources",
    -- "nautilus -n"
 })
