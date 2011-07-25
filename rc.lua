@@ -1,7 +1,7 @@
 -- Standard awesome library
 require("awful")
 require("awful.autofocus")
-require("awful.rules")
+--require("awful.rules")
 -- Theme handling library
 require("beautiful")
 -- Notification library
@@ -23,7 +23,6 @@ require("tags")
 require("menu")
 require("top-bar")
 require("bindings")
---require("rules")
-
-require("presets")
+require("signals")
 require("autostart")
+

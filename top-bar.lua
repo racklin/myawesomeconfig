@@ -89,3 +89,10 @@ for s = 1, screen.count() do
 end
 -- }}}
 
+
+--{{{ SHIFTY: initialize shifty
+-- the assignment of shifty.taglist must always be after its actually initialized 
+-- with awful.widget.taglist.new()
+shifty.taglist = mytaglist
+shifty.init()
+-- --}}}
