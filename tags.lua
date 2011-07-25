@@ -46,10 +46,10 @@ shifty.config.tags = {
 shifty.config.defaults = {
     layout = awful.layout.suit.tile,
     mwfact = 0.60,
-    floatBars=true,
+--    floatBars=true,
     guess_name=true,
-    guess_position=true,
-    run = function(tag) naughty.notify({ text = tag.name }) end,
+--    guess_position=true,
+--    run = function(tag) naughty.notify({ text = tag.name }) end,
 }
 shifty.config.layouts = layouts
 

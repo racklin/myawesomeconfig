@@ -1,7 +1,7 @@
 -- shifty: tags matching and client rules
 shifty.config.apps = {
 	-- web
-	{ match = { "Firefox", "luakit"                  }, tag = "2-web",  },	
+	{ match = { "Firefox", "Google%-chrome"                   }, tag = "2-web",  },	
 
 	-- dev
 	{ match = { "NetBeans IDE 7.0"                  }, tag = "3-dev",  },	
