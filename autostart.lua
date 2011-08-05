@@ -31,4 +31,5 @@ autorun({
     "xscreensaver -no-splash",
     "xrdb "..config_dir.."/Xresources",
    -- "nautilus -n"
+
 })

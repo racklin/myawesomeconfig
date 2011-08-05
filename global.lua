@@ -7,6 +7,7 @@ filemanager_mc = terminal .. " -e mc"
 
 config_dir = awful.util.getdir("config")
 themes_dir = config_dir.."/themes"
+home_dir = os.getenv("HOME")
 
 
 -- commands

@@ -8,11 +8,11 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/zenburn/zenburn-background.png" }
+theme.wallpaper_cmd = { "awsetbg "..themes_dir.."/zenburn/family-background.jpg" }
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 10"
+theme.font      = "sans 11"
 
 -- {{{ Colors
 theme.fg_normal = "#DCDCCC"

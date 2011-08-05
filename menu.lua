@@ -1,22 +1,26 @@
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 mynetworkmenu = {
+	{ "Google-Chrome", "google-chrome" },
 	{ "firefox", "firefox" },
 	{ "filezilla", "filezilla" },
 	{ "pidgin" , "pidgin" },
-	{ "skype", "skype" }
+	{ "skype", "skype" },
+	{ "vinagre", "vinagre" }
 }
 
 myeditorsmenu = {
 	{ "vim", terminal .. " -e vim" },
-	{ "geany", "geany" }
+	{ "ghex", "ghex2" },
+        { "Netbeans 7.0", "netbeans", "/opt/netbeans-7.0/nb/netbeans.png"}
 }
 
 myutilitiesmenu = {
 	{ "gimp", "gimp" },
 	{ "audacity", "audacity" },
-	{ "xfburn", "xfburn" },
-	{ "truecrypt", "truecrypt" }
+	{ "Brasero", "brasero" },
+	{ "truecrypt", "truecrypt" },
+	{ "open terminal", terminal },
 }
 
 monitormenu = {
@@ -54,7 +58,7 @@ mymainmenu = awful.menu({ items = {
 				    { "System",  mysystemmenu},
 				    { "Debian", debian.menu.Debian_menu.Debian },
 				    { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal },
+                                    { "quit", awesome.quit },
 					{ "lock", cmd_lock },
 					{ "shutdown", cmd_shutdown },
 					{ "suspend", cmd_suspend }

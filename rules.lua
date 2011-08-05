@@ -1,8 +1,11 @@
 -- shifty: tags matching and client rules
 shifty.config.apps = {
 	-- web
-	{ match = { "Firefox", "Google%-chrome"                   }, tag = "2-web",  },	
+	{ match = { "Firefox", "Google%-chrome", "Chromium"                   }, tag = "2-web",  },	
 
+	-- vivipos
+	{ match = { "VIVIPOS"                               }, tag = "9-vivipos", float=true },
+	
 	-- dev
 	{ match = { "NetBeans IDE 7.0"                  }, tag = "3-dev",  },	
 
@@ -20,8 +23,13 @@ shifty.config.apps = {
 	{ match = { "^gimp%-toolbox$"                    }, geometry = {0,15,175,770}, slave = true, border_width = 0    },
 	{ match = { "^gimp%-dock$"                       }, geometry = {1105,15,175,770}, slave = true, border_width = 0 },
 
-	-- vivipos
-	{ match = { "VIVIPOS"                               }, tag = "vivipos", float=true },
+	-- remote
+	{ match = { "Vinagre"                               }, tag = "vnc", },
+	{ match = { "Remmina"                               }, tag = "vnc", },
+	{ match = { "Keyboard"                               }, float = true, },
+
+	-- com 
+	{ match = { "Skype", "Pidgin" }, tag = "8-com" },
 	
 	-- client manipulation
 	{ match = { "" },
