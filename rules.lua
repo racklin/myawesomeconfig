@@ -7,7 +7,7 @@ shifty.config.apps = {
 	{ match = { "VIVIPOS"                               }, tag = "9-vivipos", float=true },
 	
 	-- dev
-	{ match = { "NetBeans IDE 7.0"                  }, tag = "3-dev",  },	
+	{ match = { "NetBeans IDE 7.0", "Eclipse"                  }, tag = "3-dev", float=true },	
 
 	-- vm
 	{ match = { "Vmplayer", "Vmware"                  }, tag = "4-vmware",  },	
@@ -29,7 +29,9 @@ shifty.config.apps = {
 	{ match = { "Keyboard"                               }, float = true, },
 
 	-- com 
-	{ match = { "Skype", "Pidgin" }, tag = "8-com" },
+	{ match = { "Skype", "Pidgin", "Xchat" }, tag = "8-com" },
+
+        { match = { "java-lang-Thread" }, float = true },
 	
 	-- client manipulation
 	{ match = { "" },

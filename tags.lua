@@ -29,7 +29,7 @@ layouts =
 -- shifty: predefined tags
 shifty.config.tags = {
 	["1"] = { init = true, position = 1, layout = awful.layout.suit.tile },
-	["2-web"] = { position = 2, layout = awful.layout.suit.max, spawn = "chromium" },
+	["2-web"] = { position = 2, layout = awful.layout.suit.max, spawn = "firefox" },
 	["3-dev"] = { position = 3, layout = awful.layout.suit.tile },
 	["4-vmware"] = { position = 4, layout = awful.layout.suit.floating, spawn = "vmplayer" },
 	["5-media"] = { position = 5, layout = awful.layout.suit.floating, spawn = "deadbeef" },
